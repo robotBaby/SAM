@@ -1,0 +1,33 @@
+{
+  "chain_id": "test_chain",
+  "accounts": [
+    {
+      "address": "634BEB14079DBB18AC1E831AA4287FD777586E63",
+      "amount": 99999999999999,
+      "name": "test_chain_full_000",
+      "permissions": {
+        "base": {
+          "perms": 16383,
+          "set": 16383
+        },
+        "roles": []
+      }
+    }
+  ],
+  "validators": [
+    {
+      "pub_key": [
+        1,
+        "B464E877F9D893419F234110B325E2E59201A335746F0AD2BE14774F304CE5B5"
+      ],
+      "name": "test_chain_full_000",
+      "amount": 9999999999,
+      "unbond_to": [
+        {
+          "address": "634BEB14079DBB18AC1E831AA4287FD777586E63",
+          "amount": 9999999999
+        }
+      ]
+    }
+  ]
+}

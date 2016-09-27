@@ -1,0 +1,39 @@
+ 322  brew install eris/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  332  brew install eris
+  333  eris init
+  334  bash brew update brew install --devel eris
+  342  eris init
+  343  eris services start keys
+  344  eris chains make test_chain --chain-type simplechain
+  345  eris chains new test_chain --dir ~/.eris/chains/test_chain
+  346  eris chains ls
+  347  eris chains rm -xf test_chain
+  348  eris services start keys
+  349  eris chains make test_chain --chain-type simplechain
+  350  eris chains ls
+  351  eris services start keys
+  352  eris chains make test_chain --chain-type simplechain
+  353  eris chains new test_chain --dir ~/.eris/chains/test_chain
+  354  eris chains ls
+  355  eris services start btcd
+  356  eris services start eth
+  357  eris services ls
+  358  eris services start eth
+  359  eris clean
+  360  eris services ls
+  361  eris services start keys
+  362  eris services exec keys "eris-keys -h"
+  363  eris keys -h
+  364  eris keys -h
+  365  eris keys gen
+  366  eris keys export 95876455AADE722ABC9F1D98CC4A89497F212580
+  367  cat ~/.eris/keys/data/95876455AADE722ABC9F1D98CC4A89497F212580/95876455AADE722ABC9F1D98CC4A89497F212580 
+  368  eris keys ls
+  370  ls ~/.eris/chains/chain-types/simplechain.toml 
+  371  eris chains make -h
+  372  eris chains make toRemoveLater
+  373  eris chains make toRemoveLater
+  374  eris chains make toRemoveLater
+  375  ls ~/.eris/chains/toRemoveLater
+  376  ls ~/.eris/chains/toRemoveLater/toremovelater_full_000
+

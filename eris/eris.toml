@@ -1,0 +1,4 @@
+IpfsHost = "http://0.0.0.0"
+CompilersHost = "https://compilers.eris.industries"
+CrashReport = "bugsnag"
+Verbose = false

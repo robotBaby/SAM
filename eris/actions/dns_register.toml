@@ -1,0 +1,19 @@
+name     = "dns register"
+services = [ "mintx" ]
+chain    = ""
+steps    = [
+  "eris services exec mintx \"mintx name --name $addr --amt 100000 --fee 0 --sign --broadcast --data '{\\\"fqdn\\\":\\\"$addr\\\", \\\"address\\\":\\\"$ip\\\", \\\"type\\\":\\\"A\\\"}'\""
+]
+
+[environment]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-actions"
+
+[machine]
+include = ["docker"]
+requires = [""]

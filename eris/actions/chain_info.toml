@@ -1,0 +1,23 @@
+name     = "chain info"
+services = [  ]
+chain    = "$chain"
+steps    = [
+  "docker run --rm --volumes-from eris_data_$chain_1 --entrypoint mintinfo eris/erisdb:develop $1",
+  "echo $1",
+  "echo $2",
+  "echo $3",
+  "echo $4",
+]
+
+[environment]
+
+[maintainer]
+name = "Eris Industries"
+email = "support@erisindustries.com"
+
+[location]
+repository = "github.com/eris-ltd/eris-actions"
+
+[machine]
+include = ["docker"]
+requires = [""]
